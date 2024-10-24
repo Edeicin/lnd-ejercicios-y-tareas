@@ -1,0 +1,59 @@
+{
+    "libros": [
+      {
+        "Nombre": "Cien años de soledad",
+        "Autor": "Gabriel Garcia Márquez",
+        "Fecha": 1967,
+        "Categoria": "Novela"
+      },
+      {
+        "Nombre": "Don Quijote de la Mancha",
+        "Autor": "Miguel de Cervantes",
+        "Fecha": 1605,
+        "Categoria": "Clásico"
+      },
+      {
+        "Nombre": "El amor en los tiempos del cólera",
+        "Autor": "Gabriel Garcia Márquez",
+        "Fecha": 1985,
+        "Categoria": "Romance"
+      },
+      {
+        "Nombre": "La sombra del viento",
+        "Autor": "Carlos Ruiz Zafón",
+        "Fecha": 2001,
+        "Categoria": "Misterio"
+      },
+      {
+        "Nombre": "Crónica de una muerte anunciada",
+        "Autor": "Gabriel Garcia Márquez",
+        "Fecha": 1981,
+        "Categoria": "Novela"
+      },
+      {
+        "Nombre": "Los pilares de la tierra",
+        "Autor": "Ken Follett",
+        "Fecha": 1989,
+        "Categoria": "Histórico"
+      },
+      {
+        "Nombre": "El principito",
+        "Autor": "Antoine de Saint-Exupéry",
+        "Fecha": 1943,
+        "Categoria": "Fábula"
+      },
+      {
+        "Nombre": "1984",
+        "Autor": "George Orwell",
+        "Fecha": 1949,
+        "Categoria": "Distopía"
+      },
+      {
+        "Nombre": "Rayuela",
+        "Autor": "Julio Cortázar",
+        "Fecha": 1963,
+        "Categoria": "Novela"
+      }
+    ]
+  }
+  

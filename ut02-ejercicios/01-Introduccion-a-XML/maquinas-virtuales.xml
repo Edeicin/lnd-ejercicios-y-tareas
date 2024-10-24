@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maquinasVirtuales>
+    <maquinaVirtual id="1">
+        <nombre>Kali Linux</nombre>
+        <cpu>4</cpu>
+        <ram unidad="MB">8192</ram>
+        <disco ruta="/home/user/vm/KaliLinux.vdi" tipo="vdi"/>
+        <tamañoDisco unidad="GB">50</tamañoDisco>
+        <adaptadorRed modo="Adaptador puente"/>
+    </maquinaVirtual>
+    <maquinaVirtual id="2">
+        <nombre>Ubuntu</nombre>
+        <cpu>2</cpu>
+        <ram unidad="MB">4096</ram>
+        <disco ruta="/home/user/vm/Ubuntu.vmdk" tipo="vmdk"/>
+        <tamañoDisco unidad="GB">100</tamañoDisco>
+        <adaptadorRed modo="NAT">
+            <reglasReenvioPuertos>
+                <regla puertoAnfitrion="8080" puertoInvitado="80"/>
+            </reglasReenvioPuertos>
+        </adaptadorRed>
+    </maquinaVirtual>
+    <maquinaVirtual id="3">
+        <nombre>Windows 10</nombre>
+        <cpu>8</cpu>
+        <ram unidad="MB">16384</ram>
+        <disco ruta="/home/user/vm/Windows10.vdi" tipo="vdi"/>
+        <tamañoDisco unidad="GB">200</tamañoDisco>
+        <adaptadorRed modo="NAT">
+            <reglasReenvioPuertos>
+                <regla puertoAnfitrion="2222" puertoInvitado="22"/>
+            </reglasReenvioPuertos>
+        </adaptadorRed>
+    </maquinaVirtual>
+</maquinasVirtuales>

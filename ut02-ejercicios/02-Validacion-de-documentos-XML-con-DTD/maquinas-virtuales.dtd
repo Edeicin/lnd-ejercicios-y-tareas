@@ -1,0 +1,14 @@
+<!ELEMENT maquinas-virtuales (maquina+)>
+<!ELEMENT maquina (nombre, cpu, ram, disco, adaptadorRed)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cpu (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ATTLIST ram unidad CDATA #REQUIRED>
+<!ELEMENT disco (#PCDATA)>
+<!ATTLIST disco tipo (vdi | vmdk) #REQUIRED>
+<!ATTLIST disco tamano CDATA #REQUIRED>
+<!ELEMENT adaptadorRed (#PCDATA)>
+<!ATTLIST adaptadorRed modo (NAT | puente) #REQUIRED>
+<!ATTLIST maquina id ID #REQUIRED>
+<!ELEMENT reenvioPuertos (puerto+)*>
+<!ELEMENT puerto (#PCDATA)>

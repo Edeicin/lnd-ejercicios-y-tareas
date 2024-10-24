@@ -1,0 +1,18 @@
+<!ELEMENT factura (emisor, receptor, detalles, resumen, comentarios)>
+<!ELEMENT emisor (nombre, direccion, ciudad, codigoPostal, nif, email)>
+<!ELEMENT receptor (empresa, direccion, ciudad, codigoPostal, cif, email)>
+<!ELEMENT detalles (producto+)>
+<!ELEMENT producto (descripcion, unidades, precioUnitario, precioTotal)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precioUnitario (#PCDATA)>
+<!ELEMENT precioTotal (#PCDATA)>
+<!ELEMENT resumen (baseImponible, iva, irpf, total)>
+<!ELEMENT baseImponible (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ATTLIST iva porcentaje CDATA #REQUIRED>
+<!ELEMENT irpf (#PCDATA)>
+<!ATTLIST irpf porcentaje CDATA #REQUIRED>
+<!ELEMENT total (#PCDATA)>
+<!ELEMENT comentarios (pago)>
+<!ELEMENT pago (#PCDATA)>

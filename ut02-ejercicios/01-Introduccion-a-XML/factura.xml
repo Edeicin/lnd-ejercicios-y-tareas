@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+    <emisor>
+        <nombre>Orlando Juan Lobán</nombre>
+        <direccion>Avenida Rosario 2, 1 A</direccion>
+        <ciudad>Barcelona</ciudad>
+        <codigoPostal>08001</codigoPostal>
+        <nif>39000001A</nif>
+        <email>info@orlandojuan.es</email>
+    </emisor>
+    <receptor>
+        <empresa>Empresa de logística, S. L.</empresa>
+        <direccion>Calle San Juan de la Luz, s/n</direccion>
+        <ciudad>Madrid</ciudad>
+        <codigoPostal>28001</codigoPostal>
+        <cif>B12345678</cif>
+        <email>info@empresalogistasl.com</email>
+    </receptor>
+    <detalles>
+        <producto>
+            <descripcion>Producto 1</descripcion>
+            <unidades>2</unidades>
+            <precioUnitario>100.00</precioUnitario>
+            <precioTotal>200.00</precioTotal>
+        </producto>
+        <producto>
+            <descripcion>Producto 2</descripcion>
+            <unidades>4</unidades>
+            <precioUnitario>150.00</precioUnitario>
+            <precioTotal>600.00</precioTotal>
+        </producto>
+        <producto>
+            <descripcion>Producto 3</descripcion>
+            <unidades>7</unidades>
+            <precioUnitario>93.00</precioUnitario>
+            <precioTotal>651.00</precioTotal>
+        </producto>
+    </detalles>
+    <resumen>
+        <baseImponible>1451.00</baseImponible>
+        <iva porcentaje="21">304.71</iva>
+        <irpf porcentaje="-15">-217.65</irpf>
+        <total>1538.06</total>
+    </resumen>
+    <comentarios>
+        <pago>Pago por transferencia: ESXXXXXXXXXXXXXXX9</pago>
+    </comentarios>
+</factura>
