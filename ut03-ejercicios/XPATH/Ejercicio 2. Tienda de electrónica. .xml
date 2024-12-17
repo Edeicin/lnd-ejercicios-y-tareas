@@ -1,0 +1,56 @@
+<electronics>
+  <item id="201">
+    <name>Smartphone</name>
+    <brand>BrandX</brand>
+    <price currency="USD">699.99</price>
+    <stock>50</stock>
+  </item>
+  <item id="202">
+    <name>Laptop</name>
+    <brand>BrandY</brand>
+    <price currency="USD">999.99</price>
+    <stock>10</stock>
+  </item>
+  <item id="203">
+    <name>Tablet</name>
+    <brand>BrandX</brand>
+    <price currency="USD">399.99</price>
+    <stock>25</stock>
+  </item>
+  <item id="204">
+    <name>Headphones</name>
+    <brand>BrandZ</brand>
+    <price currency="USD">199.99</price>
+    <stock>100</stock>
+  </item>
+</electronics>
+
+  <!-- Pregunta 1 -->
+  <query>//item/name</query>
+
+  <!-- Pregunta 2 -->
+  <query>//item[brand='BrandX']</query>
+
+  <!-- Pregunta 3 -->
+  <query>//item[price = min(//item/price)]/name</query>
+
+  <!-- Pregunta 4 -->
+  <query>//item[price = max(//item/price)]/name</query>
+
+  <!-- Pregunta 5 -->
+  <query>//item[stock > 30]/name | //item[stock > 30]/price</query>
+
+  <!-- Pregunta 6 -->
+  <query>//item/price/@currency</query>
+
+  <!-- Pregunta 7 -->
+  <query>count(//item[stock < 20])</query>
+
+  <!-- Pregunta 8 -->
+  <query>//item[price > 500]/name</query>
+
+  <!-- Pregunta 9 -->
+  <query>//item[@id > 202]/name</query>
+
+  <!-- Pregunta 10 -->
+  <query>//item[brand='BrandZ']</query>

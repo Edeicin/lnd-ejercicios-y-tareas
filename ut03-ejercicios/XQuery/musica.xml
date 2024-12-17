@@ -1,0 +1,99 @@
+<catalogo>
+  <album id="1" genero="Rock">
+    <titulo>The Dark Side of the Moon</titulo>
+    <artista>Pink Floyd</artista>
+    <anio>1973</anio>
+    <precio>20.00</precio>
+  </album>
+  <album id="2" genero="Pop">
+    <titulo>Thriller</titulo>
+    <artista>Michael Jackson</artista>
+    <anio>1982</anio>
+    <precio>18.00</precio>
+  </album>
+  <album id="3" genero="Rock">
+    <titulo>Abbey Road</titulo>
+    <artista>The Beatles</artista>
+    <anio>1969</anio>
+    <precio>25.00</precio>
+  </album>
+  <album id="4" genero="Jazz">
+    <titulo>Kind of Blue</titulo>
+    <artista>Miles Davis</artista>
+    <anio>1959</anio>
+    <precio>15.00</precio>
+  </album>
+</catalogo>
+
+  <!-- Pregunta 1 -->
+  <query>
+    for $album in /catalogo/album
+    return $album/titulo
+  </query>
+
+  <!-- Pregunta 2 -->
+  <query>
+    for $album in /catalogo/album
+    where $album/precio > 18
+    return $album
+  </query>
+
+  <!-- Pregunta 3 -->
+  <query>
+    for $album in /catalogo/album
+    return <album>
+             <title>{$album/titulo}</title>
+             <genre>{$album/@genero}</genre>
+           </album>
+  </query>
+
+  <!-- Pregunta 4 -->
+  <query>
+    let $average := avg(/catalogo/album/precio)
+    return $average
+  </query>
+
+  <!-- Pregunta 5 -->
+  <query>
+    for $album in /catalogo/album
+    where $album/@genero = "Rock"
+    return $album
+  </query>
+
+  <!-- Pregunta 6 -->
+  <query>
+    for $album in /catalogo/album
+    order by $album/anio
+    return $album
+  </query>
+
+  <!-- Pregunta 7 -->
+  <query>
+    let $expensive := max(/catalogo/album/precio)
+    for $album in /catalogo/album
+    where $album/precio = $expensive
+    return $album
+  </query>
+
+  <!-- Pregunta 8 -->
+  <query>
+    for $album in /catalogo/album
+    return <album>
+             <title>{$album/titulo}</title>
+             <discountedPrice>{xs:decimal($album/precio) * 0.8}</discountedPrice>
+           </album>
+  </query>
+
+  <!-- Pregunta 9 -->
+  <query>
+    for $album in /catalogo/album
+    where $album/anio < 1975
+    return $album
+  </query>
+
+  <!-- Pregunta 10 -->
+  <query>
+    let $total := sum(/catalogo/album/precio)
+    return $total
+  </query>
+</xquery>

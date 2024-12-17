@@ -1,0 +1,99 @@
+<tienda>
+  <producto id="1" categoria="Computadoras">
+    <nombre>Portátil</nombre>
+    <marca>HP</marca>
+    <precio moneda="USD">800</precio>
+  </producto>
+  <producto id="2" categoria="Accesorios">
+    <nombre>Monitor</nombre>
+    <marca>Dell</marca>
+    <precio moneda="USD">200</precio>
+  </producto>
+  <producto id="3" categoria="Accesorios">
+    <nombre>Ratón</nombre>
+    <marca>Logitech</marca>
+    <precio moneda="USD">25</precio>
+  </producto>
+  <producto id="4" categoria="Computadoras">
+    <nombre>Escritorio</nombre>
+    <marca>Lenovo</marca>
+    <precio moneda="USD">600</precio>
+  </producto>
+  <producto id="5" categoria="Impresoras">
+    <nombre>Impresora</nombre>
+    <marca>Canon</marca>
+    <precio moneda="USD">150</precio>
+  </producto>
+</tienda>
+
+  <!-- Pregunta 1 -->
+  <query>
+    for $product in /tienda/producto
+    return $product/nombre
+  </query>
+
+  <!-- Pregunta 2 -->
+  <query>
+    for $product in /tienda/producto
+    where $product/@categoria = "Accesorios"
+    return $product
+  </query>
+
+  <!-- Pregunta 3 -->
+  <query>
+    let $total := sum(/tienda/producto/precio)
+    return $total
+  </query>
+
+  <!-- Pregunta 4 -->
+  <query>
+    for $product in /tienda/producto
+    where $product/precio > 500
+    return $product
+  </query>
+
+  <!-- Pregunta 5 -->
+  <query>
+    for $product in /tienda/producto
+    return <product>
+             <name>{$product/nombre}</name>
+             <discountedPrice>{xs:decimal($product/precio) * 0.9}</discountedPrice>
+           </product>
+  </query>
+
+  <!-- Pregunta 6 -->
+  <query>
+    for $product in /tienda/producto
+    order by $product/precio
+    return $product
+  </query>
+
+  <!-- Pregunta 7 -->
+  <query>
+    for $product in /tienda/producto
+    where $product/marca = "HP"
+    return $product
+  </query>
+
+  <!-- Pregunta 8 -->
+  <query>
+    for $product in /tienda/producto
+    return <item>
+             <name>{$product/nombre}</name>
+             <category>{$product/@categoria}</category>
+           </item>
+  </query>
+
+  <!-- Pregunta 9 -->
+  <query>
+    let $cheapest := min(/tienda/producto/precio)
+    for $product in /tienda/producto
+    where $product/precio = $cheapest
+    return $product
+  </query>
+
+  <!-- Pregunta 10 -->
+  <query>
+    let $average := avg(/tienda/producto[@categoria='Computadoras']/precio)
+    return $average
+  </query>

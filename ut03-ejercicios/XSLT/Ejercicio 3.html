@@ -1,0 +1,8 @@
+<xsl:stylesheet>
+  <xsl:template match="/sections">
+    <xsl:for-each select="section">
+      <h2><xsl:value-of select="title"/></h2>
+      <p><xsl:value-of select="content"/></p>
+    </xsl:for-each>
+  </xsl:template>
+</xsl:stylesheet>

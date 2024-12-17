@@ -1,0 +1,94 @@
+<estudiantes>
+  <estudiante id="1" carrera="Ingeniería">
+    <nombre>Juan</nombre>
+    <edad>20</edad>
+    <nota>8.5</nota>
+  </estudiante>
+  <estudiante id="2" carrera="Derecho">
+    <nombre>María</nombre>
+    <edad>22</edad>
+    <nota>9.0</nota>
+  </estudiante>
+  <estudiante id="3" carrera="Medicina">
+    <nombre>Pedro</nombre>
+    <edad>19</edad>
+    <nota>7.5</nota>
+  </estudiante>
+  <estudiante id="4" carrera="Ingeniería">
+    <nombre>Ana</nombre>
+    <edad>21</edad>
+    <nota>8.8</nota>
+  </estudiante>
+</estudiantes>
+
+  <!-- Pregunta 1 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    return $student/nombre
+  </query>
+
+  <!-- Pregunta 2 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    where $student/nota > 8
+    return $student
+  </query>
+
+  <!-- Pregunta 3 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    return <student>
+             <name>{$student/nombre}</name>
+             <major>{$student/@carrera}</major>
+           </student>
+  </query>
+
+  <!-- Pregunta 4 -->
+  <query>
+    let $average := avg(/estudiantes/estudiante/nota)
+    return $average
+  </query>
+
+  <!-- Pregunta 5 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    where $student/@carrera = "Ingeniería"
+    return $student
+  </query>
+
+  <!-- Pregunta 6 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    order by $student/edad
+    return $student
+  </query>
+
+  <!-- Pregunta 7 -->
+  <query>
+    let $youngest := min(/estudiantes/estudiante/edad)
+    for $student in /estudiantes/estudiante
+    where $student/edad = $youngest
+    return $student
+  </query>
+
+  <!-- Pregunta 8 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    return <student>
+             <name>{$student/nombre}</name>
+             <increasedGrade>{xs:decimal($student/nota) + 0.5}</increasedGrade>
+           </student>
+  </query>
+
+  <!-- Pregunta 9 -->
+  <query>
+    for $student in /estudiantes/estudiante
+    where $student/nota > 8 and $student/@carrera = "Ingeniería"
+    return $student
+  </query>
+
+  <!-- Pregunta 10 -->
+  <query>
+    count(/estudiantes/estudiante)
+  </query>
+</xquery>

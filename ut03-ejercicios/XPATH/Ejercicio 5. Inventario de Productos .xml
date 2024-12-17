@@ -1,0 +1,63 @@
+<inventory>
+  <product id="P001">
+    <name>Chair</name>
+    <category>Furniture</category>
+    <price currency="USD">49.99</price>
+    <stock>200</stock>
+  </product>
+  <product id="P002">
+    <name>Table</name>
+    <category>Furniture</category>
+    <price currency="USD">129.99</price>
+    <stock>50</stock>
+  </product>
+  <product id="P003">
+    <name>Lamp</name>
+    <category>Lighting</category>
+    <price currency="USD">19.99</price>
+    <stock>100</stock>
+  </product>
+  <product id="P004">
+    <name>Desk</name>
+    <category>Furniture</category>
+    <price currency="USD">249.99</price>
+    <stock>20</stock>
+  </product>
+  <product id="P005">
+    <name>Ceiling Light</name>
+    <category>Lighting</category>
+    <price currency="USD">79.99</price>
+    <stock>30</stock>
+  </product>
+</inventory>
+
+  <!-- Pregunta 1 -->
+  <query>//product/name</query>
+
+  <!-- Pregunta 2 -->
+  <query>//product[category='Furniture']</query>
+
+  <!-- Pregunta 3 -->
+  <query>//product[name='Lamp']/price</query>
+
+  <!-- Pregunta 4 -->
+  <query>count(//product[stock > 50])</query>
+
+  <!-- Pregunta 5 -->
+  <query>//product[price = max(//product/price)]</query>
+
+  <!-- Pregunta 6 -->
+  <query>//product[stock < 30]/name</query>
+
+  <!-- Pregunta 7 -->
+  <query>//product/price</query>
+
+  <!-- Pregunta 8 -->
+  <query>//product[category='Lighting']/@id</query>
+
+  <!-- Pregunta 9 -->
+  <query>//product[price = min(//product/price)]/price</query>
+
+  <!-- Pregunta 10 -->
+  <query>//product/name | //product/price</query>
+</xpath>

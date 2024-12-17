@@ -1,0 +1,13 @@
+<xsl:stylesheet>
+  <xsl:output method="text"/>
+  <xsl:template match="/document">
+    [
+    <xsl:for-each select="section">
+      {
+        "title": "<xsl:value-of select="title"/>",
+        "content": "<xsl:value-of select="content"/>"
+      }<xsl:if test="position() != last()">,</xsl:if>
+    </xsl:for-each>
+    ]
+  </xsl:template>
+</xsl:stylesheet>

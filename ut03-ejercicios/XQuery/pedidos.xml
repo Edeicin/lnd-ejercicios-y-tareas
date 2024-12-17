@@ -1,0 +1,96 @@
+<pedidos>
+  <pedido id="1" cliente="Juan">
+    <producto>Televisor</producto>
+    <cantidad>1</cantidad>
+    <precio>400</precio>
+  </pedido>
+  <pedido id="2" cliente="María">
+    <producto>Teléfono</producto>
+    <cantidad>2</cantidad>
+    <precio>200</precio>
+  </pedido>
+  <pedido id="3" cliente="Pedro">
+    <producto>Ratón</producto>
+    <cantidad>5</cantidad>
+    <precio>25</precio>
+  </pedido>
+  <pedido id="4" cliente="Ana">
+    <producto>Teclado</producto>
+    <cantidad>3</cantidad>
+    <precio>30</precio>
+  </pedido>
+</pedidos>
+
+<!-- Pregunta 1 -->
+  <query>
+    for $order in /pedidos/pedido
+    return $order/@cliente
+  </query>
+
+  <!-- Pregunta 2 -->
+  <query>
+    for $order in /pedidos/pedido
+    return <order>
+             <product>{$order/producto}</product>
+             <totalPrice>{xs:decimal($order/cantidad) * xs:decimal($order/precio)}</totalPrice>
+           </order>
+  </query>
+
+  <!-- Pregunta 3 -->
+  <query>
+    for $order in /pedidos/pedido
+    where xs:decimal($order/cantidad) * xs:decimal($order/precio) > 100
+    return $order
+  </query>
+
+  <!-- Pregunta 4 -->
+  <query>
+    let $average := avg(for $order in /pedidos/pedido
+                        return xs:decimal($order/cantidad) * xs:decimal($order/precio))
+    return $average
+  </query>
+
+  <!-- Pregunta 5 -->
+  <query>
+    let $expensive := max(for $order in /pedidos/pedido
+                          return xs:decimal($order/cantidad) * xs:decimal($order/precio))
+    for $order in /pedidos/pedido
+    where xs:decimal($order/cantidad) * xs:decimal($order/precio) = $expensive
+    return $order
+  </query>
+
+  <!-- Pregunta 6 -->
+  <query>
+    for $order in /pedidos/pedido
+    order by $order/@cliente
+    return $order
+  </query>
+
+  <!-- Pregunta 7 -->
+  <query>
+    let $total := sum(for $order in /pedidos/pedido
+                      return xs:decimal($order/cantidad) * xs:decimal($order/precio))
+    return $total
+  </query>
+
+  <!-- Pregunta 8 -->
+  <query>
+    for $order in /pedidos/pedido
+    where $order/cantidad > 3
+    return $order/@cliente
+  </query>
+
+  <!-- Pregunta 9 -->
+  <query>
+    for $order in /pedidos/pedido
+    return <product>
+             <name>{$order/producto}</name>
+             <discountedPrice>{xs:decimal($order/precio) * 0.85}</discountedPrice>
+           </product>
+  </query>
+
+  <!-- Pregunta 10 -->
+  <query>
+    count(/pedidos/pedido)
+  </query>
+</xquery>

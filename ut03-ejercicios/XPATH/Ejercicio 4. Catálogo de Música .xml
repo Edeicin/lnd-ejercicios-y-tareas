@@ -1,0 +1,67 @@
+<musicCatalog>
+  <album id="101">
+    <title>Thriller</title>
+    <artist>Michael Jackson</artist>
+    <genre>Pop</genre>
+    <price currency="USD">15.99</price>
+    <stock>50</stock>
+  </album>
+  <album id="102">
+    <title>The Dark Side of the Moon</title>
+    <artist>Pink Floyd</artist>
+    <genre>Rock</genre>
+    <price currency="USD">20.99</price>
+    <stock>30</stock>
+  </album>
+  <album id="103">
+    <title>Back in Black</title>
+    <artist>AC/DC</artist>
+    <genre>Rock</genre>
+    <price currency="USD">18.50</price>
+    <stock>25</stock>
+  </album>
+  <album id="104">
+    <title>21</title>
+    <artist>Adele</artist>
+    <genre>Pop</genre>
+    <price currency="USD">12.99</price>
+    <stock>100</stock>
+  </album>
+  <album id="105">
+    <title>Abbey Road</title>
+    <artist>The Beatles</artist>
+    <genre>Rock</genre>
+    <price currency="USD">19.99</price>
+    <stock>10</stock>
+  </album>
+</musicCatalog>
+
+  <!-- Pregunta 1 -->
+  <query>//album/title</query>
+
+  <!-- Pregunta 2 -->
+  <query>//album[genre='Rock']/title</query>
+
+  <!-- Pregunta 3 -->
+  <query>//album[title='21']/price</query>
+
+  <!-- Pregunta 4 -->
+  <query>count(//album[stock > 20])</query>
+
+  <!-- Pregunta 5 -->
+  <query>//album[price > 18]/artist</query>
+
+  <!-- Pregunta 6 -->
+  <query>//album[price = max(//album/price)]</query>
+
+  <!-- Pregunta 7 -->
+  <query>//album[title='Thriller']/genre</query>
+
+  <!-- Pregunta 8 -->
+  <query>//album[artist='Adele']/@id</query>
+
+  <!-- Pregunta 9 -->
+  <query>//album[stock < 30]</query>
+
+  <!-- Pregunta 10 -->
+  <query>distinct-values(//album/genre)</query>

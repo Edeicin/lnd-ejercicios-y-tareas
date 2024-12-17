@@ -1,0 +1,10 @@
+<xsl:stylesheet>
+  <xsl:output method="text"/>
+  <xsl:template match="/fruits">
+    [
+    <xsl:for-each select="fruit">
+      "<xsl:value-of select="."/>"<xsl:if test="position() != last()">,</xsl:if>
+    </xsl:for-each>
+    ]
+  </xsl:template>
+</xsl:stylesheet>

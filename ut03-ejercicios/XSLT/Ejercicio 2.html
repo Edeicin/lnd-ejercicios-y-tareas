@@ -1,0 +1,16 @@
+<xsl:stylesheet>
+  <xsl:template match="/library">
+    <table border="1">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+      </tr>
+      <xsl:for-each select="book">
+        <tr>
+          <td><xsl:value-of select="title"/></td>
+          <td><xsl:value-of select="author"/></td>
+        </tr>
+      </xsl:for-each>
+    </table>
+  </xsl:template>
+</xsl:stylesheet>

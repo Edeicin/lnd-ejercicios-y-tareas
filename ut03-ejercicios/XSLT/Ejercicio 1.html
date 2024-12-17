@@ -1,0 +1,9 @@
+<xsl:stylesheet>
+  <xsl:template match="/fruits">
+    <ul>
+      <xsl:for-each select="fruit">
+        <li><xsl:value-of select="."/></li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+</xsl:stylesheet>
