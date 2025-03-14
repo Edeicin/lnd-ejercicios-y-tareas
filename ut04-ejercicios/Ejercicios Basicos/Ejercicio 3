@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ejercicio HTML - Biografía de Vinton Cerf">
+    <title>Biografía de Vinton Cerf</title>
+</head>
+<body>
+    <h1>Biografía de Vinton Cerf</h1>
+    <h2>Primeros años y contribuciones</h2>
+    <p>Cuando tenía 25 años, trabajó en el motor del cohete F-1 que propulsó el Saturno V en su viaje a la Luna.</p>
+    
+    <h2>Desarrollo de TCP/IP</h2>
+    <p>En los años 70, junto con Robert Kahn, desarrolló el conjunto de protocolos TCP/IP, esenciales para la comunicación en Internet.</p>
+    
+    <h2>Innovaciones en redes</h2>
+    <p>Entre 1976 y 1982, trabajó en DARPA en el desarrollo de la transmisión de datos por radio y satélite.</p>
+    
+    <h2>Contribuciones posteriores</h2>
+    <p>En 1992, cofundó la Internet Society y fue su primer presidente. Actualmente, es vicepresidente de Google.</p>
+</body>
+</html>

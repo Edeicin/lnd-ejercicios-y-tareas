@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ejercicio HTML - Formateo de texto">
+    <title>Tim Berners-Lee y la World Wide Web</title>
+</head>
+<body>
+    <h1>Tim Berners-Lee y la Creación de la World Wide Web</h1>
+    <p><strong>1980:</strong> Trabajó en el CERN y propuso un proyecto basado en el hipertexto para compartir información.</p>
+    <p><strong>1989:</strong> Unió Internet y el hipertexto, creando la World Wide Web.</p>
+    <p><strong>1990:</strong> Junto con Robert Cailliau, perfeccionó su propuesta, que fue aceptada por su gerente.</p>
+    <p><strong>1991:</strong> Creó el primer servidor Web (httpd) y el primer navegador (WorldWideWeb).</p>
+    <p><strong>1994:</strong> Se trasladó al MIT y fundó el W3C, promoviendo estándares abiertos para la Web.</p>
+</body>
+</html>
