@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Listas</title>
+</head>
+<body>
+    <h1>Ejercicio 1: Definiciones</h1>
+    <dl>
+        <dt>HTTP</dt>
+        <dd>Protocolo de transferencia de hipertexto utilizado para la comunicación en la web.</dd>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado para la creación de páginas web.</dd>
+        <dt>URL</dt>
+        <dd>Localizador uniforme de recursos que especifica la dirección de un recurso en la web.</dd>
+        <dt>TCP/IP</dt>
+        <dd>Conjunto de protocolos que permiten la comunicación entre dispositivos en una red.</dd>
+        <dt>Internet</dt>
+        <dd>Red global de computadoras interconectadas.</dd>
+        <dt>W3C</dt>
+        <dd>Consorcio que desarrolla estándares para la web.</dd>
+        <dt>Mozilla Foundation</dt>
+        <dd>Organización sin ánimo de lucro que desarrolla software libre como el navegador Firefox.</dd>
+    </dl>
+</body>
+</html>
