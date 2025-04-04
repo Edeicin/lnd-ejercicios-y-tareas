@@ -1,0 +1,11 @@
+<!-- Ejercicio 6: Video de YouTube -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video de YouTube</title>
+</head>
+<body>
+    <h2>Ejercicio 6: Video de YouTube</h2>
+    <iframe width="560" height="315" src="https://youtu.be/g7rdGiwRjBY?si=VxUifysshKGyY1W7" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>

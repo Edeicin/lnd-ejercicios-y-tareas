@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 4</title>
+</head>
+<body>
+    <h2>Formulario 4</h2>
+    <form>
+        <fieldset>
+            <legend>Asignatura</legend>
+            <label><input type="radio" name="asignatura" value="asignaturalengua"> Lengua</label><br>
+            <label><input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas</label><br>
+            <label><input type="radio" name="asignatura" value="asignaturahistoria"> Historia</label><br>
+            <label><input type="radio" name="asignatura" value="asignaturageografia"> Geografía</label>
+        </fieldset>
+        <fieldset>
+            <legend>Editor</legend>
+            <label><input type="checkbox" name="editor" value="editornotepad"> Notepad</label><br>
+            <label><input type="checkbox" name="editor" value="editoremacs"> Emacs</label><br>
+            <label><input type="checkbox" name="editor" value="editorotro"> Otro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea rows="5" cols="59">Escriba aquí, por favor</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Procesador</legend>
+            <select name="procesador">
+                <option value="amd">AMD</option>
+                <option value="intel_i5">Intel i5</option>
+                <option value="intel_i7">Intel i7</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

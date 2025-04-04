@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <h2>Formulario de selección</h2>
+    <form>
+        <label>Fecha:</label>
+        <input type="date" name="fecha"><br><br>
+        <label>Subir archivo:</label>
+        <input type="file" name="archivo"><br><br>
+
+        <fieldset>
+            <legend>Procesador</legend>
+            <label><input type="radio" name="procesador" value="procesadoramd"> AMD</label><br>
+            <label><input type="radio" name="procesador" value="procesadorintel_i5"> Intel i5</label><br>
+            <label><input type="radio" name="procesador" value="procesadorintel_i7"> Intel i7</label><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Asignatura</legend>
+            <label><input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas</label><br>
+            <label><input type="radio" name="asignatura" value="asignaturahistoria"> Historia</label><br>
+            <label><input type="radio" name="asignatura" value="asignaturageografia"> Geografía</label><br>
+            <label><input type="radio" name="asignatura" value="asignaturalengua"> Lengua</label><br>
+        </fieldset><br>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre"><br><br>
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos"><br><br>
+        <label>Dirección:</label>
+        <input type="text" name="direccion"><br><br>
+
+        <label>Color:</label>
+        <input type="color" name="color"><br><br>
+
+        <textarea rows="6" cols="59">Utilice este cuadro para escribir</textarea><br><br>
+
+        <label>Fecha:</label>
+        <input type="date" name="fecha2"><br><br>
+
+        <label>Idioma:</label>
+        <select name="idioma">
+            <option value="ingles">Inglés</option>
+            <option value="aleman">Alemán</option>
+            <option value="frances">Francés</option>
+        </select><br><br>
+
+        <label>Hora:</label>
+        <input type="time" name="hora"><br><br>
+
+        <label>Subir archivo:</label>
+        <input type="file" name="archivo2"><br><br>
+
+        <label><input type="checkbox" name="sexo" value="sexomujer"> Mujer</label><br>
+        <label><input type="checkbox" name="sexo" value="sexohombre"> Hombre</label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

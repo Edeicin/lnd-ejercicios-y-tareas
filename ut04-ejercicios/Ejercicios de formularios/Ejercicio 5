@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 5</title>
+</head>
+<body>
+    <h2>Formulario 5</h2>
+    <form>
+        <!-- Control para elegir el color -->
+        <label>Elige un color:</label>
+        <input type="color" name="color"><br><br>
+
+        <!-- Cuadros de texto -->
+        <label>Nombre:</label>
+        <input type="text" name="nombre"><br>
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos"><br>
+        <label>Teléfono:</label>
+        <input type="text" name="telefono"><br><br>
+
+        <!-- Checkboxes de asignaturas -->
+        <label>Asignaturas:</label><br>
+        <input type="checkbox" name="asignatura" value="asignaturalengua"> Lengua<br>
+        <input type="checkbox" name="asignatura" value="asignaturamatematicas"> Matemáticas<br>
+        <input type="checkbox" name="asignatura" value="asignaturahistoria"> Historia<br>
+        <input type="checkbox" name="asignatura" value="asignaturageografia"> Geografía<br><br>
+
+        <!-- Control para elegir ficheros -->
+        <label>Subir fichero:</label>
+        <input type="file" name="fichero"><br><br>
+
+        <!-- Textarea -->
+        <textarea rows="4" cols="57">Utilice este cuadro para escribir</textarea><br><br>
+
+        <!-- Radiobuttons de formato -->
+        <label>Formato:</label><br>
+        <input type="radio" name="formato" value="formatojpg"> JPG<br>
+        <input type="radio" name="formato" value="formatopng"> PNG<br><br>
+
+        <!-- Cuadros de texto adicionales -->
+        <label>Dirección:</label>
+        <input type="text" name="direccion"><br><br>
+
+        <!-- Control para indicar la fecha -->
+        <label>Fecha:</label>
+        <input type="date" name="fecha"><br><br>
+
+        <!-- Lista desplegable múltiple -->
+        <label>Conector:</label>
+        <select name="conector" multiple>
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select><br><br>
+
+        <!-- Control para elegir ficheros adicional -->
+        <label>Subir otro fichero:</label>
+        <input type="file" name="fichero2"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

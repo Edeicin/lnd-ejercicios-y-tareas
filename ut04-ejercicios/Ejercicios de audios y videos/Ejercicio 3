@@ -1,0 +1,18 @@
+<!-- Ejercicio 3: audios.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audios</title>
+</head>
+<body>
+    <h2>Ejercicio 3: Audios en distintos formatos</h2>
+    <audio controls>
+        <source src="audio1.mp3" type="audio/mpeg">
+        Tu navegador no soporta el formato MP3.
+    </audio>
+    <audio controls>
+        <source src="audio2.wma" type="audio/wma">
+        Tu navegador no soporta el formato WMA.
+    </audio>
+</body>
+</html>

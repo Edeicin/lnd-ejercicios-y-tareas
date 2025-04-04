@@ -1,0 +1,19 @@
+<!-- Ejercicio 4: videos-preload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video con Preload</title>
+</head>
+<body>
+    <h2>Ejercicio 4: Video con Preload</h2>
+    <video width="320" height="240" controls preload="metadata">
+        <source src="video3.mp4" type="video/mp4">
+        Tu navegador no soporta el formato MP4.
+    </video>
+    <p>El atributo preload con valor 'metadata' carga solo los metadatos del vídeo. Otros valores posibles son:</p>
+    <ul>
+        <li>auto: carga el vídeo completo antes de reproducir.</li>
+        <li>none: no carga nada hasta que el usuario lo reproduzca.</li>
+    </ul>
+</body>
+</html>

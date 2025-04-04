@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 3</title>
+</head>
+<body>
+    <form>
+        <!-- Control para elegir el color -->
+        <label for="color">Seleccione un color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Textarea -->
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="5" cols="53">Por favor, escriba aquí</textarea><br><br>
+
+        <!-- Lista desplegable de lenguajes -->
+        <label for="lenguaje">Lenguaje:</label>
+        <select id="lenguaje" name="lenguaje">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="html">HTML</option>
+            <option value="visual_basic">Visual Basic</option>
+        </select><br><br>
+
+        <!-- Checkboxes de ciclo -->
+        <label>Ciclo:</label><br>
+        <input type="checkbox" name="ciclo" value="cicloasir"> ASIR<br>
+        <input type="checkbox" name="ciclo" value="ciclodam"> DAM<br>
+        <input type="checkbox" name="ciclo" value="ciclodaw"> DAW<br><br>
+
+        <!-- Control para la fecha -->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <!-- Control para elegir archivos -->
+        <label for="archivo">Archivo:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+
+        <!-- Lista desplegable múltiple de ciclos -->
+        <label for="ciclo-multiple">Ciclo (múltiple):</label>
+        <select id="ciclo-multiple" name="ciclo" multiple>
+            <option value="smir">SMIR</option>
+            <option value="asir">ASIR</option>
+            <option value="dam">DAM</option>
+            <option value="daw">DAW</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

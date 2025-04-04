@@ -1,0 +1,18 @@
+<!-- Ejercicio 5: audios2.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audios con Configuración Especial</title>
+</head>
+<body>
+    <h2>Ejercicio 5: Audios con Bucle y Silencio</h2>
+    <video width="320" height="240" controls loop>
+        <source src="video4.mp4" type="video/mp4">
+        Tu navegador no soporta el formato MP4.
+    </video>
+    <video width="320" height="240" controls muted>
+        <source src="video5.mp4" type="video/mp4">
+        Tu navegador no soporta el formato MP4.
+    </video>
+</body>
+</html>
