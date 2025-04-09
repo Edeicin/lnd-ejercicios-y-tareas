@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Estructura Web</title>
+	<style>
+		div {
+			border: 1px solid #000000;
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<!-- Logo + menú superior + categorías -->
+	</div>
+
+	<div id="container">
+
+		<div id="main">
+			<!-- Video destacado -->
+		</div>
+
+		<div id="section1">
+			<div id="article1">
+				<!-- Imagen + texto (lado izquierdo) -->
+			</div>
+			<div id="article2">
+				<!-- Texto + botón (lado derecho) -->
+			</div>
+		</div>
+
+		<div id="section2">
+			<div id="article1">
+				<!-- Texto + botón (lado izquierdo) -->
+			</div>
+			<div id="article2">
+				<!-- Imagen (lado derecho) -->
+			</div>
+		</div>
+
+		<div id="section3">
+			<!-- Frase central: "Lenguaje de marcas la mejor asignatura" -->
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<!-- Sabías que... + Contacto -->
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Estructura Web Semántica</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		section, article, header, main, footer, nav, aside {
+			border: 1px solid #000000;
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<!-- Logo + menú superior -->
+		<nav>
+			<!-- Categorías -->
+		</nav>
+	</header>
+
+	<main>
+
+		<section>
+			<!-- Video destacado -->
+		</section>
+
+		<section>
+			<article>
+				<!-- Imagen + texto (lado izquierdo) -->
+			</article>
+			<article>
+				<!-- Texto + botón (lado derecho) -->
+			</article>
+		</section>
+
+		<section>
+			<article>
+				<!-- Texto + botón (lado izquierdo) -->
+			</article>
+			<article>
+				<!-- Imagen (lado derecho) -->
+			</article>
+		</section>
+
+		<section>
+			<!-- Frase central: "Personas que conectan con personas" -->
+		</section>
+
+	</main>
+
+	<footer>
+		<aside>
+			<!-- Sabías que... -->
+		</aside>
+		<aside>
+			<!-- Contacto -->
+		</aside>
+	</footer>
+
+</body>
+</html>
