@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML & CSS: Curso práctico avanzado</title>
+  <link rel="stylesheet" href="Ejercicio 1.1">
+</head>
+<body>
+  <h1>HTML & CSS: Curso práctico avanzado</h1>
+
+  <h2>Datos del libro</h2>
+  <ul>
+    <li><strong>Título:</strong> HTML & CSS: Curso práctico avanzado</li>
+    <li><strong>Autor:</strong> Sergio Luján Mora</li>
+    <li><strong>Editorial:</strong> Publicaciones Altaria</li>
+    <li><strong>Año de publicación:</strong> 2015</li>
+    <li><strong>ISBN:</strong> 978-84-944049-4-8</li>
+  </ul>
+</body>
+</html>

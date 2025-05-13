@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Colores</title>
+    <link rel="stylesheet" href="Ejercicio 2.1">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="teal-white">teal</td>
+            <td class="teal-red">teal</td>
+            <td class="teal-green">teal</td>
+            <td class="teal-blue">teal</td>
+        </tr>
+        <tr>
+            <td class="red-white">red</td>
+            <td class="red-black">red</td>
+            <td class="red-green">red</td>
+            <td class="red-blue">red</td>
+        </tr>
+        <tr>
+            <td class="blue-white">blue</td>
+            <td class="blue-red">blue</td>
+            <td class="blue-green">blue</td>
+            <td class="blue-orange">blue</td>
+        </tr>
+        <tr>
+            <td class="orange-white">orange</td>
+            <td class="orange-red">orange</td>
+            <td class="orange-green">orange</td>
+            <td class="orange-blue">orange</td>
+        </tr>
+        <tr>
+            <td class="purple-white">purple</td>
+            <td class="purple-red">purple</td>
+            <td class="purple-green">purple</td>
+            <td class="purple-blue">purple</td>
+        </tr>
+        <tr>
+            <td class="olive-white">olive</td>
+            <td class="olive-red">olive</td>
+            <td class="olive-green">olive</td>
+            <td class="olive-blue">olive</td>
+        </tr>
+        <tr>
+            <td class="fuchsia-white">fuchsia</td>
+            <td class="fuchsia-red">fuchsia</td>
+            <td class="fuchsia-green">fuchsia</td>
+            <td class="fuchsia-blue">fuchsia</td>
+        </tr>
+        <tr>
+            <td class="green-white">green</td>
+            <td class="green-red">green</td>
+            <td class="green-green">green</td>
+            <td class="green-blue">green</td>
+        </tr>
+    </table>
+</body>
+</html>

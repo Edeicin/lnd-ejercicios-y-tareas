@@ -1,0 +1,7 @@
+<h2>Contenido del libro</h2>
+<p>El contenido se estructura en tres partes:</p>
+<ul>
+  <li>Primera parte: conceptos generales, estructura física/lógica, enlaces, <em style="background-color:black; color:white;"><strong>HTML</strong></em>, <em style="background-color:black; color:white;"><strong>CSS</strong></em>, <strong>URI</strong>.</li>
+  <li>Segunda parte: etiquetas de <em style="background-color:black; color:white;"><strong>HTML</strong></em> para texto, enlaces, listas, tablas, formularios y multimedia.</li>
+  <li>Tercera parte: uso de <strong>CSS</strong> para colores, presentación de texto, tablas y transiciones.</li>
+</ul>

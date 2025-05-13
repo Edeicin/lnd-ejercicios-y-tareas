@@ -1,0 +1,12 @@
+<h2>Descripción del libro</h2>
+<p>
+  Aunque los inicios de <strong style="color:blue;">Internet</strong> se remontan a los años sesenta, no ha sido hasta los años noventa cuando, gracias a la <strong style="color:blue;">Web</strong>, se ha extendido su uso por todo el mundo. En pocos años, la <strong style="color:blue;">Web</strong> ha evolucionado enormemente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos estáticos, a páginas complejas, con contenidos dinámicos que provienen de bases de datos y que son visitadas por miles de usuarios.
+</p>
+
+<p>
+  Todas las páginas están construidas con el Lenguaje de marcas de hipertexto <em style="background-color:black; color:white;">(Hypertext Markup Language, HTML)</em> y con las Hojas de estilo en cascada <em style="background-color:black; color:white;"><strong>(Cascading Style Sheets, CSS)</strong></em>.
+</p>
+
+<p>
+  Este libro es adecuado para cualquiera que tenga interés en aprender a desarrollar sus propias páginas web. No son necesarios conocimientos previos, solo saber utilizar un ordenador y navegar por la <strong style="color:blue;">Web</strong>.
+</p>

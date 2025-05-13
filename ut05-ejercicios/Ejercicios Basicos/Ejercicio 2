@@ -1,0 +1,41 @@
+<h2>Tabla de medios de transporte</h2>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Main mode</th>
+      <th>Central London</th>
+      <th>Rest of Inner London</th>
+      <th>Outer London</th>
+      <th>All London</th>
+      <th>Rest of Great Britain</th>
+      <th>Great Britain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Car and van</td><td>48</td><td>32</td><td>25</td><td>29</td><td>20</td><td>20</td>
+    </tr>
+    <tr>
+      <td>Motorbike, moped, scooter</td><td>36</td><td>29</td><td>27</td><td>31</td><td>19</td><td>21</td>
+    </tr>
+    <tr>
+      <td>Bicycle</td><td>33</td><td>24</td><td>20</td><td>25</td><td>15</td><td>17</td>
+    </tr>
+    <tr>
+      <td>Bus and coach</td><td>47</td><td>39</td><td>36</td><td>40</td><td>33</td><td>34</td>
+    </tr>
+    <tr>
+      <td>National Rail</td><td>69</td><td>66</td><td>43</td><td>66</td><td>47</td><td>58</td>
+    </tr>
+    <tr>
+      <td>Underground, tram, light rail</td><td>49</td><td>45</td><td>37</td><td>47</td><td>42</td><td>46</td>
+    </tr>
+    <tr>
+      <td>Walk</td><td>21</td><td>16</td><td>13</td><td>15</td><td>12</td><td>13</td>
+    </tr>
+    <tr>
+      <td><strong>All modes</strong></td><td>55</td><td>39</td><td>27</td><td>39</td><td>20</td><td>23</td>
+    </tr>
+  </tbody>
+</table>
