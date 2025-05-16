@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Tarjeta</title>
+  <style>
+    .tarjeta {
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    .tarjeta h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .tarjeta button {
+      background-color: #397eff;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .tarjeta button:hover {
+      background-color: #2f6ee5;
+    }
+  </style>
+</head>
+<body>
+  <div class="tarjeta">
+    <h1>Mi Tarjeta</h1>
+    <p>Esta es una descripción breve sobre mí. ¡Gracias por leer!</p>
+    <button>Contacto</button>
+  </div>
+</body>
+</html>

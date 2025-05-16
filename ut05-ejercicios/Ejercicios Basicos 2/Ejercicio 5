@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Enlaces</title>
+  <style>
+    ul {
+      list-style: none; /* elimina los puntos */
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 15px; /* espacio entre elementos */
+    }
+
+    a {
+      text-decoration: none;
+      color: #333; /* gris oscuro */
+      font-size: 20px;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    a:hover {
+      color: #007bff; /* azul brillante */
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="https://www.google.com">Google</a></li>
+    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    <li><a href="https://www.github.com">GitHub</a></li>
+    <li><a href="https://stackoverflow.com">Stack Overflow</a></li>
+    <li><a href="https://www.openai.com">OpenAI</a></li>
+  </ul>
+
+</body>
+</html>
